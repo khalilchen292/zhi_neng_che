@@ -3,6 +3,7 @@
 
 ## 访问与路径核验（main）
 
+- 核验时间：2026-04-21（UTC）。
 - 已验证可访问仓库 `khalilchen292/zhi_neng_che` 的 `main` 分支。
 - 已在仓库内搜索以下目标文件及等价路径：
   - `launch/star_all.launch.py`
@@ -14,7 +15,7 @@
 当前 `main` 分支未包含视觉代码，因此暂无法在本仓库直接执行视觉启动流程。  
 当后续同步视觉代码后，可按以下约定使用：
 
-1. 运行视觉启动文件（示例命令，实际以落库后的包名/文件路径为准）：`ros2 launch <package_name> star_all.launch.py`
+1. 运行视觉启动文件（示例命令，实际以落库后的包名/文件路径为准）：`ros2 launch <task_vision> star_all.launch.py`
 2. 配置/更换模型权重：
    - 通常可在 `yolo_inference.py` 中将权重路径配置项改为新的权重文件路径；或
    - 若 `star_all.launch.py` 提供权重参数，则通常优先通过 launch 参数传入权重路径（参数名以实际实现为准，如 `model_path` / `weights_file`）。
