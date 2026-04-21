@@ -1,0 +1,6 @@
+class_name_to_semantic:
+  cone_small: "cone"
+  cone_big: "cone"
+  qr_code: "qrcode"
+  marker_board: "marker"
+  white_cross: "no_go_white_cross"

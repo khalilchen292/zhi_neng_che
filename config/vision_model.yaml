@@ -1,0 +1,10 @@
+model:
+  name: yolo
+  version: "baseline-2026-04-21"
+  weights_path: "models/default_yolo.onnx"
+
+class_name_to_semantic:
+  cone: "cone"
+  qrcode: "qrcode"
+  marker: "marker"
+  white_cross: "no_go_white_cross"
