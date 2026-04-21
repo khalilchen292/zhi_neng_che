@@ -21,10 +21,10 @@ def _build_parser(repo_root: Path) -> argparse.ArgumentParser:
     parser.add_argument(
         "--config",
         default=str(repo_root / "config" / "vision_model.yaml"),
-        help="主配置文件路径",
+        help="Path to main configuration file",
     )
-    parser.add_argument("--model-path", default=None, help="模型权重路径覆盖")
-    parser.add_argument("--mapping-file", default=None, help="类别映射文件覆盖")
+    parser.add_argument("--model-path", default=None, help="Override model weights path")
+    parser.add_argument("--mapping-file", default=None, help="Override class mapping file")
     return parser
 
 
